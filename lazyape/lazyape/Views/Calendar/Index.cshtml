@@ -1,0 +1,16 @@
+@{
+    ViewBag.Title = "Calender";
+    Layout = "_Layout";
+}
+
+
+<div class="row">
+    @{
+        //The partial views for the calender and settings.
+        //Uses RenderPartialAsync since if one of them is slow then it is not slowing down the other
+        //Also it fixed a warning
+        await Html.RenderPartialAsync("_CalendarPartial");
+        await Html.RenderPartialAsync("_SettingsPartial"); 
+        
+    }
+</div>

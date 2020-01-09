@@ -1,0 +1,41 @@
+/*Background for about us*/
+.mainBackground{
+    font-family: "Bookman Old Style", sans-serif;
+    background-image: url("../Images/Background.png");
+    width:100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+/*Background for profil*/
+.ProfilBackground{
+    background-image: url("../Images/Background.png");
+    width:49%;
+    height: 100%;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    overflow: auto;
+}
+
+/*Text for about us AND index*/
+div.Text{
+    position: relative;
+    left: 15%;
+    font-family: "Bookman Old Style", sans-serif;
+    text-align: center;
+    width: 70%;
+}
+
+/*Placement for profilImage*/
+span.Image{
+    float: right;
+}
+
+/*Size for profilImage*/
+img.Prof{
+    width:150px;
+    height:150px;
+}

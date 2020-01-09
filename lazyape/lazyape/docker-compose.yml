@@ -1,0 +1,53 @@
+version: '3'
+
+services:
+
+  dotnet:
+    build: .
+    depends_on:
+      - db
+    expose:
+      - 80 # Forward HTTP port to host
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      LETSENCRYPT_HOST: "${HOST}"
+      VIRTUAL_HOST: "${HOST}"
+      LETSENCRYPT_EMAIL: "${EMAIL}"
+
+  db:
+    image: "postgres"
+    expose:
+      - 5432 # Only required when connecting during development
+    environment:
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  nginx-proxy:
+    image: "jwilder/nginx-proxy"
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - nginx-certs:/etc/nginx/certs
+      - nginx-vhost:/etc/nginx/vhost.d
+      - nginx-html:/usr/share/nginx/html
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    labels:
+      - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy"
+  
+  letsencrypt-nginx-proxy-companion:
+    image: "jrcs/letsencrypt-nginx-proxy-companion"
+    depends_on:
+      - nginx-proxy
+    volumes:
+      - nginx-certs:/etc/nginx/certs
+      - nginx-vhost:/etc/nginx/vhost.d
+      - nginx-html:/usr/share/nginx/html
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+  
+volumes:
+  nginx-certs:
+  nginx-vhost:
+  nginx-html:
+  db-data:

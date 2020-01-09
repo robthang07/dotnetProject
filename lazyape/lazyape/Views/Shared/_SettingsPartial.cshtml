@@ -1,0 +1,45 @@
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="/js/Setting.js"></script>
+
+<div id="settings" class="settingLight" style="display: none;">
+    <div>
+        
+        <!------------------------- Dark Mode Switch --------------------------->
+        
+        <div class="myToggleBtn">
+            
+            <p>Night Mode</p>
+        
+            <label class="switch">
+                <input id="darkmode" type="checkbox" v-on:click="setDarkMode()">
+                <span class="slider round"></span>
+            </label>
+            
+        </div>
+        
+        <!------------------------- Start Time Switch --------------------------->
+        
+            <p>Start Time:</p> 
+            <input type="time" id="starttime">
+            <button class="btn btn-primary" v-on:click="setStartTime()">Send</button>
+
+        <!------------------------- End Time Switch --------------------------->
+        
+            <p>End Time:</p> 
+            <input type="time"  id="endtime">
+            <button class="btn btn-primary" v-on:click="setEndTime()">Send</button>
+        
+        <!------------------------- Visible Time From Switch --------------------------->
+            <p>Visible Time From:</p> 
+            <input type="time" id="visibletimefrom">
+            <button class="btn btn-primary" v-on:click="setVisibleTimeFrom()">Send</button>
+        
+        <!------------------------- Visible Time To Switch --------------------------->
+            <p>Visible Time To:</p>
+            <input type="time" id="visibletimeto">
+            <button class="btn btn-primary" v-on:click="setVisibleTimeTo()">Send</button>
+
+        
+    </div>
+</div>

@@ -1,0 +1,49 @@
+#calendar {
+    height: 70vh;
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-right: 0;
+    display: block;
+}
+
+.darkmode{
+    background-color: #171a1d;
+}
+
+.darkmode #calendar {
+    background-color: black;
+    color: lightgrey;
+}
+
+.darkmode nav {
+    color: white
+}
+
+.settingDark{
+    background: url("../Images/Background2.png");
+    border-radius: 1em;
+    padding: 1em;
+    border-style: solid;
+}
+
+.settingLight{
+    background: url("../Images/Background.png");
+    border-radius: 1em;
+    padding: 1em;
+    border-style: solid;
+}
+
+.navDark{
+    background: transparent;
+    color: white;
+}
+.navLight{
+    background: transparent;
+    color: black;
+}
+
+.darkCalendar{
+    background-color: #1b1e21;
+}

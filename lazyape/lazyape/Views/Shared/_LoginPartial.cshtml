@@ -1,0 +1,32 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<ul class="navbar-nav">
+@if (SignInManager.IsSignedIn(User))
+{
+    @* Show the user name when logged in, and when clicked show them the user manage page*@
+    <li class="nav-item">
+        <a  class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>
+    </li>
+    
+    @* Redirect the user when logging out to the Home Index *@
+    <li class="nav-item">
+        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" 
+               asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button type="submit" class="nav-link btn btn-link">Logout</button>
+        </form>
+    </li>
+    
+    @* Settings is only visible when the user is logged inn *@
+    <button id="Setting" class="btn btn-primary">Settings</button>
+}
+else
+{
+    <li class="nav-item">
+        @* Redirect the user when logging in to the Calender Index *@
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login"
+           asp-route-returnUrl="@Url.Action("Index", "Calendar", new {area = ""})">Login</a>
+    </li>
+}
+</ul>

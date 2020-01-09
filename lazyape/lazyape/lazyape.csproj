@@ -1,0 +1,122 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <UserSecretsId>aspnet-lazyape-8B917206-FD93-4903-92AA-B874A9D42100</UserSecretsId>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bootstrap.v3.Datetimepicker.CSS" Version="4.17.45" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="NpgSql.EntityFrameworkCore.PostgreSQL" Version="2.2.0" />
+    <PackageReference Include="NpgSql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\bootstrap\main.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\bootstrap\main.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\bootstrap\main.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\bootstrap\main.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales-all.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales-all.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\af.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ar-dz.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ar-kw.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ar-ly.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ar-ma.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ar-sa.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ar-tn.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ar.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\bg.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\bs.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ca.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\cs.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\da.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\de.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\el.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\en-au.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\en-gb.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\en-nz.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\es-us.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\es.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\et.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\eu.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\fa.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\fi.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\fr-ca.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\fr-ch.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\fr.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\gl.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\he.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\hi.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\hr.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\hu.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\id.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\is.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\it.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ja.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ka.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\kk.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ko.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\lb.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\lt.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\lv.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\mk.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ms.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\nb.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\nl.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\nn.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\pl.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\pt-br.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\pt.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ro.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\ru.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\sk.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\sl.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\sq.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\sr-cyrl.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\sr.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\sv.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\th.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\tr.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\uk.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\vi.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\zh-cn.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\locales\zh-tw.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\main.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\main.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\main.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\core\main.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\daygrid\main.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\daygrid\main.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\daygrid\main.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\daygrid\main.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\google-calendar\main.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\google-calendar\main.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\interaction\main.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\interaction\main.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\list\main.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\list\main.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\list\main.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\list\main.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\luxon\main.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\luxon\main.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\moment-timezone\main.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\moment-timezone\main.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\moment\main.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\moment\main.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\rrule\main.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\rrule\main.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\timegrid\main.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\timegrid\main.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\timegrid\main.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\fullcalendar\timegrid\main.min.js" />
+  </ItemGroup>
+
+
+</Project>
